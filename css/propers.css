@@ -1,0 +1,336 @@
+/**********************************
+global Variables
+***********************************/
+
+:root {
+    --main-color: #4A60A1;
+    --gray-100: #889099;
+    --white: #EDEFF6;
+    --border-clr: #CFD3D6;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+    --main-transition: 0.8s;
+}
+
+/***********************************/
+/***********************************
+___Start Global rules
+************************************/
+
+
+* {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/***********************************
+___HEADER___
+************************************/
+
+header {
+    position: relative;
+}
+
+/* ___propers-c ___contact*/
+.propers-c {
+    background-color: #2C3A61;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* ___propers-c ___header*/
+.propers-h {
+    background-color:#CFD3D6;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.propers-h .container a{
+    color: #0F1320;
+}
+
+header .header .add{
+border-color: #0F1320;
+}
+
+.propers-h .container ul .active {
+    color: #0F1320;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1010px) {
+    .header .links{
+        display: none;
+    }
+    header .header .fa-bars-staggered{
+            display: block;
+    }
+}
+header .header .fa-bars-staggered:hover {
+    color: #4A60A1;
+}
+
+/****************************************
+___LANDING START___
+*****************************************/
+
+.landing02 {
+    position: relative;
+    background-image: url("../images/landing-02.png");
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.landing02::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(0deg, rgba(6, 48, 83, 0.333), rgba(6, 48, 83, 0.353));
+}
+
+.container .title{
+    position: relative;
+    line-height: 1.8;
+    z-index: 2;
+}
+
+.container .title h2{
+    font-weight: 600;
+    font-size: 52px;
+    
+}
+
+/****************************************
+___FORM___
+*****************************************/
+
+section .container {
+    padding: 100px 0;
+}
+
+.form-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.container .form-list ul li {
+    padding: 8px;
+    color: #1B1D1F;
+}
+
+.container .form-list ul li form select {
+    background-color: transparent;
+    border: none;
+    color: #6D737A;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding: 10px 35px 10px 0;
+}
+
+form .select::before {
+    color: #0F1320;
+    background-color: transparent;
+}
+
+.container .form-list ul li i {
+    color: #6D737A;
+    font-size: 20px;
+}
+
+.container .form-list ul li a {
+    color: #1B1D1F;
+}
+
+.container .form-list ul .active,
+.container .form-list ul .active i {
+    font-weight: bold;
+    color: #1B1D1F;
+}
+
+@media (max-width: 767px){
+    .container .form-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container .form-list ul li,
+    .container .form-list ul a {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}
+
+/****************************************
+___PROPERTICES___
+*****************************************/
+.pro {
+    padding: 0;
+}
+
+.zig-zag{
+    display: grid;
+    padding: 40px 0;
+    grid-gap: 50px;
+}
+
+@media(min-width:800px){
+    .zig-zag{
+        grid-template-columns: repeat(5,1fr);
+        align-items: center;
+    }
+}
+
+.zig{
+    grid-column: span 2;
+    display: block;
+    padding: 10px;
+}
+
+.zag{
+    grid-column: span 3;
+    height: 440px;
+}
+
+.zig-zag .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.zig-zag .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.zig-zag .avatar img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.zig-zag .avatar p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #363A3D;
+    margin-left: 13px;
+}
+
+.zig-zag h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #363A3D;
+    padding: 10px 0;
+    color: #4A60A1;
+}
+
+.zig-zag p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #889099;
+    padding: 10px 0;
+}
+
+.zig-zag .number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #4A60A1;
+    padding: 20px 0;
+}
+
+.zig-zag .zag{
+    position: relative;
+    background-color: #1B1D1F;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 11px;
+    
+}
+
+.zig-zag .zag img{
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.zig-zag .zag .box{
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: #4A60A1;
+    width: fit-content;
+    position: absolute;
+}
+
+.zig-zag .zag .box i{
+    padding-left: 25px;
+}
+
+.zig-zag .zag .box span{
+    padding: 0 5px;
+}
+
+.zig-zag .zag .box-right{
+    top: 80%;
+    right: -25px;
+}
+
+.zig-zag .zag .box-left{
+    top: 80%;
+    left: -25px;
+}
+
+@media (max-width: 767px){
+    .zig-zag .zag .box{
+        right: 0;
+        bottom: 0;
+        border-radius: 0px 0px 6px 6px;
+        -webkit-border-radius: 0px 0px 6px 6px;
+        -moz-border-radius: 0px 0px 6px 6px;
+        -ms-border-radius: 0px 0px 6px 6px;
+        -o-border-radius: 0px 0px 6px 6px;
+        width: 100%;
+        left: 0;
+    }
+}
